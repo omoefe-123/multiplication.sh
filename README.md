@@ -21,16 +21,16 @@ This Bash script helps to generates a multiplication table for a number entered 
 
    ## Script Breakdown
 
-   1. Prompting User Input
+   1. Prompting User Input;
     The script starts by asking the user to enter a number for the multiplication table to be generated
      `read -p "Enter a number for the multiplication table: " number`
 
-  2. Validaate the inpute number
+  2. Validaate the inpute number;
   `if ! [[ "$number" =~ ^[0-9]+$ ]]; then 
    echo "Invalid number. Please enter a valid integer." 
    exit 1 
    fi`
-  3. Full or Partial Table Choice
+  3. Full or Partial Table Choice;
    The user is asked whether they want a full table or a partial table
     `read -p "Do you want a full table or a partial table? (Enter 'f' for full, 'p' for partial): " choice`
 
@@ -42,12 +42,12 @@ This Bash script helps to generates a multiplication table for a number entered 
 
 
 read -p "Enter a number to generate its multiplication table: " number
-  # Validate if the input is a valid number
+  ## Validate if the input is a valid number
 if ! [[ "$number" =~ ^[0-9]+$ ]]; then
     echo "Invalid input! Please enter a valid number."
     continue
 fi
- # Step 2: Ask if the user wants a full table or partial
+ ## Step 2: Ask if the user wants a full table or partial
 echo "Do you want a full multiplication table (1-10) or a partial one?"
 echo "f. Full (1 to 10)"
 echo "p. Partial (special range)"
@@ -55,4 +55,3 @@ read -p "Enter your choice (f or p): " choice`
 
 ### Above is the summary of the command i ran to prompt if partial or full
 
-4. 
