@@ -38,20 +38,21 @@ This Bash script helps to generates a multiplication table for a number entered 
     * For Partial table, the user chooses (p), the script prompt the starting and the ending numbers of the range. To validate this it has to be within the 1 to 10 and the start is less than or equal to the end
     
 
-  `#!/bin/bash
-
-
+```markdown
+#!/bin/bash
 read -p "Enter a number to generate its multiplication table: " number
-  ## Validate if the input is a valid number
+  # Validate if the input is a valid number
 if ! [[ "$number" =~ ^[0-9]+$ ]]; then
     echo "Invalid input! Please enter a valid number."
     continue
 fi
- ## Step 2: Ask if the user wants a full table or partial
+ # Step 2: Ask if the user wants a full table or partial
 echo "Do you want a full multiplication table (1-10) or a partial one?"
 echo "f. Full (1 to 10)"
 echo "p. Partial (special range)"
-read -p "Enter your choice (f or p): " choice`
+read -p "Enter your choice (f or p): " choice
+```
+
 
 ### Above is the summary of the command i ran to prompt if partial or full
 
