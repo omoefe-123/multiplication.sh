@@ -66,17 +66,19 @@ read -p "Enter your choice (f or p): " choice
 
 while true; do
   ## Step 1: Ask the user for a number
-  read -p "Enter a number to generate its multiplication table: " number
+  `read -p "Enter a number to generate its multiplication table: " number
   ## Validate if the input is a valid number
   if ! [[ "$number" =~ ^[0-9]+$ ]]; then
     echo "Invalid input! Please enter a valid number."
     continue
-  fi
+  fi`
+
   ## Step 2: Ask if the user wants a full table or partial
-  echo "Do you want a full multiplication table (1-10) or a partial one?"
+
+  `echo "Do you want a full multiplication table (1-10) or a partial one?"
   echo "f. Full (1 to 10)"
   echo "p. Partial (special range)"
-  read -p "Enter your choice (f or p): " choice
+  read -p "Enter your choice (f or p): " choice`
 
   `if [ "$choice" == "f" ]; then
     # Full table (1 to 10)
@@ -106,9 +108,10 @@ while true; do
     continue
   fi`
   ## Step 6: Ask if the user wants to repeat the process
-  read -p "Do you want to generate another table? (y/n): " repeat
+
+  `read -p "Do you want to generate another table? (y/n): " repeat
   if [[ "$repeat" != "y" ]]; then
     echo "Exiting the program."
     break
   fi
-done
+done`
