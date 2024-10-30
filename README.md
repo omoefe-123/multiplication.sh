@@ -37,7 +37,9 @@ This Bash script helps to generates a multiplication table for a number entered 
     `read -p "Do you want a full table or a partial table? (Enter 'f' for full, 'p' for partial): " choice`
 
     * If the user chooses full table (f) the script will generate a multiplication table starting from 1 to 10.
-   /images/full-multiplication-table.jpg 
+   ![full-table](images/full-multiplication-table.jpg) 
+
+
     
 
     * For Partial table, the user chooses (p), the script prompt the starting and the ending numbers of the range. To validate this it has to be within the 1 to 10 and the start is less than or equal to the end
