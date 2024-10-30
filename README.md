@@ -59,19 +59,20 @@ echo "f. Full (1 to 10)"
 echo "p. Partial (special range)"
 read -p "Enter your choice (f or p): " choice
 ```
-### below is the summary of the command
- i ran to prompt if partial or full, handling user input and applying conditinal logic
+# Below is the summary of the command
+ I ran to prompt if partial or full, handling user input and applying conditinal logic
 
 #!/bin/bash
+
 while true; do
-  # Step 1: Ask the user for a number
+  ## Step 1: Ask the user for a number
   read -p "Enter a number to generate its multiplication table: " number
-  # Validate if the input is a valid number
+  ## Validate if the input is a valid number
   if ! [[ "$number" =~ ^[0-9]+$ ]]; then
     echo "Invalid input! Please enter a valid number."
     continue
   fi
-  # Step 2: Ask if the user wants a full table or partial
+  ## Step 2: Ask if the user wants a full table or partial
   echo "Do you want a full multiplication table (1-10) or a partial one?"
   echo "f. Full (1 to 10)"
   echo "p. Partial (special range)"
@@ -104,7 +105,7 @@ while true; do
     echo "Invalid choice! Please enter f for full or p for partial."
     continue
   fi`
-  # Step 6: Ask if the user wants to repeat the process
+  ## Step 6: Ask if the user wants to repeat the process
   read -p "Do you want to generate another table? (y/n): " repeat
   if [[ "$repeat" != "y" ]]; then
     echo "Exiting the program."
