@@ -5,8 +5,10 @@
 This Bash script helps to generates a multiplication table for a number entered by the user. This project will help you practice using loops, handling user input and applying conditinal logic in Bash Scripting
 
 
-## Usage
-   1. log into my ubutu server
+## USAGE
+
+## STEP 1
+   1. log into my Linux server
    2. Create multiplication.sh and run the command Vim multiplication.sh
    3. Start your shell scripting with the following command
 
@@ -111,7 +113,7 @@ The image below shows the full multiplication result
 ![full-table](images/full-multiplication-table.jpg)
 
 
-## Step 3: Handling Multiplication table for partial choice (p)
+## STEP 3: Handling Multiplication table for partial choice (p)
 
 ### Below is the summary of the command that does the following:
 
@@ -176,3 +178,9 @@ The image below shows the entire result of this script:
 
 
  ![complete-table](images/complete-multiplication-output.jpg)
+
+From the above output 
+* I tried invalid range
+* I tried full multiplication table
+* i also tried partial range
+* Enhanced user interaction
