@@ -63,10 +63,12 @@ echo "p. Partial (special range)"
 read -p "Enter your choice (f or p): " choice
 ```
 
+Below shows the result of this script:
+
 ![invalid-range](images/invalid-range-showing.jpg)
 
 
-# STEP 2: Full Multiplication table and handling Partial choice input
+## STEP 2: Full Multiplication table and handling Partial choice input
 
 ### Below is the summary of the command that does the following:
 
