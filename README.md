@@ -180,8 +180,8 @@ The image below shows the entire result of this script:
  ![complete-table](images/complete-multiplication-output.jpg)
 
 From the above output,
-I enhanced user interaction 
-I entered a number to generate the Full multiplication table
-Also for partial range
-Then i tried invalid range
+* I enhanced user interaction 
+* I entered a number to generate the Full multiplication table
+* Also for partial range
+* Then i tried invalid range
 
