@@ -2,24 +2,24 @@
 
 ## Multiplication Table Generator
 
-This Bash script helps to generates a multiplication table for a number entered by the user. This project will help you practice using loops, handling user input and applying conditinal logic in Bash Scripting
+This Bash script helps to generate a multiplication table for a number entered by the user. This project will help you practice using loops, handling user input and applying conditiOnal logic in Bash Scripting
 
 
 ## USAGE
 
-   1. log into my Linux server
+   1. Log into my Linux server
    2. Create multiplication.sh and run the command Vim multiplication.sh
    3. Start your shell scripting with the following command
 
-   `#!/bin/bash`
+      `#!/bin/bash`
 
-   4. after i can make the script executable at this stage by using the following command
+   4. After i can make the script executable at this stage by using the following command
 
-   `chmod +x multiplication.sh`
+      `chmod +x multiplication.sh`
 
    5. To run the the script,i ran this command
 
-   `./multiplication.sh`
+      `./multiplication.sh`
 
 
 ## SCRIPT BREAKDOWN
@@ -72,8 +72,8 @@ Below shows the result of this script:
 
 ### Below is the summary of the command that does the following:
 
-* calculate the multiplication table
-* it accept both **start** and **end** range 
+* Calculate the multiplication table
+* It accept both **start** and **end** range 
 * To validate the **start** and **end** input
 
 **Find the script:**
@@ -124,7 +124,7 @@ The image below shows the full multiplication result
 
 ### Below is the summary of the command that does the following:
 
-* calculate the partial multiplication table
+* Calculate the partial multiplication table
 * Ask if the user wants to repeat the process
 
 **Find the script:**
