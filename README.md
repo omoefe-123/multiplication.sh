@@ -7,7 +7,6 @@ This Bash script helps to generates a multiplication table for a number entered 
 
 ## USAGE
 
-## STEP 1
    1. log into my Linux server
    2. Create multiplication.sh and run the command Vim multiplication.sh
    3. Start your shell scripting with the following command
@@ -25,37 +24,32 @@ This Bash script helps to generates a multiplication table for a number entered 
 
 ## SCRIPT BREAKDOWN
 
-## STEP 2: Prompting user input and validating
+## STEP 1: Prompting user input and validating
 
-  * Prompting User Input;The script starts by asking the user to enter a number for the multiplication table to be generated
+### Below is the summary of the command that does the following:
 
-     `read -p "Enter a number for the multiplication table: " number`
+* Prompting User Input; The script starts by asking the user to enter a number for the multiplication table to be generated
 
-  *  Validate the input number`
+* Validate the input number
+ 
+* Ask if the user wants to repeat the process
+
+* Full or Partial Table Choice;
+
+* The user is asked whether they want a full table or a partial table
+
+* If the user chooses full table (f) the script will generate a multiplication table starting from 1 to 10
+
+* For Partial table, the user chooses (p), the script prompt the starting and the ending numbers of the range.
+
+*  To validate this it has to be within 1 to 10 and the start is less than or equal to the end
     
-       ```markdown
-       if ! [[ "$number" =~ ^[0-9]+$ ]]; then 
-echo "Invalid number. Please enter a valid integer." 
-exit 1 
-fi
-       ```
-       
+**Find the script:**
 
-   ![invalid-range](images/invalid-range-showing.jpg)
 
-  * Full or Partial Table Choice;
-
-  * The user is asked whether they want a full table or a partial table:
-
-    `read -p "Do you want a full table or a partial table? (Enter 'f' for full, 'p' for partial): " choice`
-
-  * If the user chooses full table (f) the script will generate a multiplication table starting from 1 to 10
-
-  * For Partial table, the user chooses (p), the script prompt the starting and the ending numbers of the range.
-   To validate this it has to be within 1 to 10 and the start is less than or equal to the end
-    
-
+```markdown
 #!/bin/bash
+
 read -p "Enter a number to generate its multiplication table: " number
   # Validate if the input is a valid number
 if ! [[ "$number" =~ ^[0-9]+$ ]]; then
@@ -67,8 +61,12 @@ echo "Do you want a full multiplication table (1-10) or a partial one?"
 echo "f. Full (1 to 10)"
 echo "p. Partial (special range)"
 read -p "Enter your choice (f or p): " choice
+```
 
-## STEP 2: Full Multiplication table and handling Partial choice input
+![invalid-range](images/invalid-range-showing.jpg)
+
+
+# STEP 2: Full Multiplication table and handling Partial choice input
 
 ### Below is the summary of the command that does the following:
 
@@ -88,7 +86,7 @@ if ! [[ "$number" =~ ^[0-9]+$ ]]; then
     echo "Invalid input! Please enter a valid number."
 
 fi
- # Step 2: Ask if the user wants a full table or partial
+ ### Step 2: Ask if the user wants a full table or partial
 echo "Do you want a full multiplication table (1-10) or a partial one?"
 echo "f. Full (1 to 10)"
 echo "p. Partial (special range)"
